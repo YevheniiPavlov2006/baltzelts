@@ -25,12 +25,9 @@ bestSellerCard.forEach(bestSellerCard => {
 
 
 
-document.querySelectorAll(".like-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    const img = button.querySelector("img");
-    img.src = img.src.includes("img/card-like-icon.svg")
-      ? "img/card-like-icon.svg"
-      : "img/card-liked-icon.svg";
+document.querySelectorAll('.card-like-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('liked');
   });
 });
 

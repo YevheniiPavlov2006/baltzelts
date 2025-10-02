@@ -15,6 +15,7 @@ body {
 
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+  cursor: default;
 }
 
 .wrapper {
@@ -40,13 +41,18 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 input:focus {
   outline: none;
 }
+input {
+  cursor: pointer;
+}
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 
@@ -378,6 +384,7 @@ button {
 .best-seller-card-rbar {
   display: none;
   transition: all 0.4s ease;
+
 }
 
 .best-seller-img-part.hoverable {
@@ -386,6 +393,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 
     position: absolute;
     top: 20px;
@@ -406,6 +414,41 @@ button {
   }
 }
 
+.card-like-btn {
+  background: url("img/card-like-icon.svg") no-repeat center center;
+  background-color: #411825;
+  border-radius: 50%;
+  width: 45px;
+  aspect-ratio: 1;
+}
+.card-share-btn {
+  background: url("img/card-share-icon.svg") no-repeat center center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  aspect-ratio: 1;
+  border: 1px solid #411825;
+}
+.card-full-btn {
+  background: url("img/card-full-screen-icon.svg") no-repeat center center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  aspect-ratio: 1;
+  border: 1px solid #411825;
+  transition: 0.3s;
+}
+.card-side-btn:hover {
+  background-color: #E0D6C5;
+}
+
+.card-like-btn.liked {
+  background: url("img/card-liked-icon.svg") no-repeat center center;
+  background-color: #411825;
+  border-radius: 50%;
+  width: 45px;
+  aspect-ratio: 1;
+}
 
 
 
@@ -681,6 +724,13 @@ button {
   margin: 50px 0;
 }
 
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .footer-columns-part {
   display: flex;
   gap: 80px;
@@ -695,5 +745,40 @@ button {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.footer-info-media {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+.footer-logo {
+  margin-top: 30px;
+}
+.footer-information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  margin-top: 30px;
+}
+.footer-inormation-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #E7E5E6;
+  font-size: 16px;
+}
+
+.footer-year {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 50px;
 }
