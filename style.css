@@ -782,3 +782,44 @@ button {
   font-weight: 400;
   margin-top: 50px;
 }
+
+
+
+/*---------------------------------------Products-------------------------------------*/
+.under-page-info {
+  margin-top: 40px;
+}
+.prev-page {
+  font-size: 16px;
+  font-weight: 400;
+  border-right: 2px solid #CAC6C8;
+  color: #796E73;
+  text-transform: uppercase;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.curent-page {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #411825;
+  padding-left: 15px;
+}
+
+.products-block-top {
+  width: 100%;
+  text-align: center;
+  background-color: #411825;
+  padding: 30px 50px;
+  color: #fff;
+
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Playfair Display';
+
+  margin-top: 45px;
+}
+.products-block-top span {
+  font-size: 45px;
+  font-family: 'Playfair Display';
+}
