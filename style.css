@@ -1027,3 +1027,13 @@ input[type="checkbox"]:checked {
 .rules-content-text a {
   color: #411825;
 }
+
+
+/*-------------------------------------------------------wishlist---------------------------------------------------------*/
+
+.wish-block {
+  margin-top: 40px;
+}
+.wish-block .block-title {
+  text-align: center;
+}
