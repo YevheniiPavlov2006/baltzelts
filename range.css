@@ -1,0 +1,76 @@
+.range {
+  width: 100%;
+
+
+
+  --track-size: 2px;
+  --indicator-size: 16px;
+
+  --primary-color: #D8C29D;
+  --base-color: #ccc;
+  --text-color: #000;
+  --control-color: #D8C29D;
+
+  --label-font-size: 14px;
+
+  height: calc(var(--indicator-size));
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-left: calc(var(--indicator-size) / 2);
+  padding-right: calc(var(--indicator-size) / 2);
+}
+
+.range__track {
+  position: relative;
+
+  width: 100%;
+  border-radius: var(--track-size);
+  height: var(--track-size);
+
+  background-color: var(--base-color);
+}
+.range__fill {
+  position: absolute;
+  top: 0;
+
+  left: calc(var(--min) * 100%);
+  width: calc((var(--max) - var(--min)) * 100%);
+
+  height: 100%;
+  background-color: var(--primary-color);
+}
+.range__control {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  top: 50%;
+
+  transform: translateY(-50%) translateX(-50%);
+}
+.range__control-1 {
+  left: calc(var(--value-1) * 100%);
+}
+.range__control-2 {
+  left: calc(var(--value-2) * 100%);
+}
+.range__indicator {
+  width: var(--indicator-size);
+  height: var(--indicator-size);
+  border-radius: var(--indicator-size);
+
+  background-color: var(--control-color);
+  cursor: pointer;
+  user-select: none;
+
+}
+.range__label {
+  line-height: var(--label-height);
+  font-size: var(--label-font-size);
+  margin-bottom: var(--label-margin);
+}

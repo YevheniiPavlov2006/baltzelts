@@ -836,7 +836,6 @@ button {
 .products-filter-part {
   min-width: 230px;
   background-color: #F2F0EC;
-  height: 100vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -866,6 +865,7 @@ button {
 
   padding-bottom: 20px;
   border-bottom: 1px solid #796E73;
+  width: 100%;
 }
 
 
@@ -874,17 +874,24 @@ button {
   flex-direction: column;
   align-items: start;
   gap: 15px;
+  user-select: none;
+
+  width: 100%;
 }
 .filter-block-title {
   font-size: 20px;
   font-weight: 700;
   color: #411825;
   margin-bottom: 20px;
+  user-select: none;
 }
 .filter-block-item {
   color: #796E73;
   font-size: 18px;
   font-weight: 400;
+
+  width: 100%;
+  user-select: none;
 
   transition: 0.3s;
 }
@@ -911,10 +918,44 @@ button {
 }
 
 input[type="checkbox"]:checked {
-  accent-color: #d97706;
+  accent-color: #D8C29D;
   border: none;
+  color: #fff;
 }
 
 .filter-block-list-item input:checked ~ span {
   font-weight: bold;
+}
+
+.filter-block-size {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.fiter-block-item-size {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+
+  border: 1px solid #D8C29D;
+  color: #411825;
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+.fiter-block-item-size.active {
+  background-color: #D8C29D;
+  color: #fff;
+}
+
+
+.filter-range-price {
+  font-size: 16px;
+  color: #411825;
+}
+
+.filter-block-range {
+  width: 100%;
 }
