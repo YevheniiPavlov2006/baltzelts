@@ -42,3 +42,14 @@ faqItems.forEach(faq => {
     faq.classList.toggle(faqItemOpenedClass)
   })
 })
+
+
+
+document.querySelectorAll('.filter-block-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.filter-block-item').forEach(el => {
+      el.classList.remove('active');
+    });
+    item.classList.add('active');
+  });
+});
