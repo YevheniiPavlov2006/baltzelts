@@ -1087,3 +1087,60 @@ input[type="checkbox"]:checked {
   background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
 }
 
+
+/*---------------------------------------------------------delivery--------------------------------------------------*/
+
+.delivery-block {
+  margin-top: 40px;
+}
+.delivery-block .block-title {
+  text-align: center;
+}
+.delivery-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.delivery-content-text {
+  color: #411825;
+  font-size: 16px;
+  font-weight: 400;
+}
+.delivery-content-list {
+  border-top: 1px solid #E7E5E6;
+  width: 100%;
+}
+.delivery-list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 10px;
+  width: 100%;
+
+  border-bottom: 1px solid #E7E5E6;
+}
+
+.delivery-list-item-title {
+  font-size: 16px;
+  color: #411825;
+  font-weight: 400;
+}
+.delivery-list-item-subtitle {
+  color: #796E73;
+  font-size: 16px;
+  font-weight: 400;
+}
+.delivery-list-item-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #52363F;
+}
+.delivery-list-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+}
