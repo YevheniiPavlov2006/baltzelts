@@ -384,7 +384,13 @@ button {
 .best-seller-card-rbar {
   display: none;
   transition: all 0.4s ease;
+}
 
+.wish-block .card-full-btn {
+  display: none;
+}
+.wish-block .card-share-btn {
+  display: none;
 }
 
 .best-seller-img-part.hoverable {
@@ -1037,3 +1043,43 @@ input[type="checkbox"]:checked {
 .wish-block .block-title {
   text-align: center;
 }
+
+.wish-block .best-seller-card-rbar {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+
+.wish-slider-block {
+  margin-top: 100px;
+  position: relative;
+}
+.wish-slider-block .block-title {
+  text-align: center;
+}
+
+
+.wish-slider {
+  overflow: hidden;
+  position: relative;
+  margin: 0 50px;
+  padding: 5px;
+  margin-top: 40px;
+}
+.wish-slider-block .swiper-button-prev {
+  padding: 35px 10px;
+  background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
+}
+
+.wish-slider-block .swiper-button-next {
+  padding: 35px 10px;
+  transform: rotate(180deg);
+  background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
+}
+

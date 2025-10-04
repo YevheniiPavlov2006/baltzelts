@@ -190,3 +190,19 @@ function clamp(min, value, max) {
   if(value > max) return max
   return value
 }
+
+
+
+/*---------------------------------------------------------slider------------------------------------------------------------*/
+
+new Swiper('.wish-slider', {
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 3,
+  autoHeight: true,
+  spaceBetween: 15,
+  loop: true,
+});
