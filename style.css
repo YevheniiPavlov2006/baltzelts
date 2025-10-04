@@ -1064,6 +1064,10 @@ input[type="checkbox"]:checked {
   text-align: center;
 }
 
+.wish-block .best-seller-content {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 
 .wish-slider {
   overflow: hidden;
