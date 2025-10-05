@@ -1144,3 +1144,125 @@ input[type="checkbox"]:checked {
   align-items: start;
   gap: 3px;
 }
+
+
+/*-------------------------------------------------------------cart-----------------------------------------------*/
+
+.cart-block .block-title {
+  text-align: center;
+}
+.cart-block {
+  margin-top: 40px;
+}
+.cart-content-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+
+  margin-top: 40px;
+}
+.cart-content-button {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+
+  border: 1px solid #411825;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.cart-btn-light {
+  color: #411825;
+}
+.cart-btn-dark {
+  background-color: #411825;
+  color: #fff;
+}
+
+.cart-content-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+.cart-content-total-text {
+  color: #B07A1E;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.cart-content-total-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #411825;
+}
+
+.cart-content-list {
+  border-bottom: 1px solid #F2F0EC;
+
+  max-height: 80vh;
+  overflow-y: scroll;
+
+  margin-top: 40px;
+}
+.cart-content-list::-webkit-scrollbar {
+  display: none; 
+}
+
+.cart-list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+  padding: 10px;
+  border-bottom: 1px solid #F2F0EC;
+
+  position: relative;
+}
+.cart-list-item-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.cart-list-item-img {
+  width: 100px;
+  aspect-ratio: 1;
+
+  border: 1px solid #E0D6C5;
+}
+.cart-list-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 100px;
+}
+.cart-list-item-number {
+  background-color: #F2F0EC;
+  width: 100px;
+  padding: 15px;
+  font-size: 16px;
+  color: #796E73;
+  text-align: center;
+}
+.cart-list-item-content-title {
+  font-size: 18px;
+  color: #411825;
+  font-weight: 700;
+}
+.cart-list-item-content-size {
+  color: #796E73;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.cart-list-item-content-price {
+  color: #52363F;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
