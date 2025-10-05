@@ -1125,6 +1125,16 @@ input[type="checkbox"]:checked {
 
   border-bottom: 1px solid #E7E5E6;
 }
+.payment-list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 10px;
+  width: 100%;
+
+  border-bottom: 1px solid #E7E5E6;
+}
 
 .delivery-list-item-title {
   font-size: 16px;
@@ -1296,6 +1306,7 @@ input[type="checkbox"]:checked {
 .checkout-content-list {
   background-color: #FAF9F7;
   padding: 30px;
+  min-width: 380px;
 }
 .order-list-part-line {
   display: flex;
@@ -1475,17 +1486,87 @@ input[type="checkbox"]:checked {
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid #D8C29D;
-  padding: 3px;
 
+  position: relative;
   cursor: pointer;
+}
+
+.delivery-list-item.gray-bkg {
+  background-color: #F2F0EC;
+}
+.payment-list-item.gray-bkg {
+  background-color: #F2F0EC;
 }
 
 .delivery-order-list-checkpoint.active {
   border: 1px solid #411825;
   .delivery-order-list-checkpoint-point {
     background-color: #411825;
-    width: 100%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     aspect-ratio: 1;
     border-radius: 50%;
   }
 }
+
+
+.delivery-order-checkbox {
+  margin-top: 15px;
+}
+
+
+
+.order-part-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+
+
+/*-------------------------------------------checkbox----------------------------------*/
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: all 0.2s;
+}
+
+/* Галочка */
+.checkbox input:checked + .checkmark {
+  background-color: #D8C29D;
+  border-color: #D8C29D;
+}
+
+.checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/*-------------------------------------------------------------------------------------------*/

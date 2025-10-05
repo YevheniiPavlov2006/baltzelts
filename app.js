@@ -195,7 +195,7 @@ function clamp(min, value, max) {
 
 /*---------------------------------------------------------slider------------------------------------------------------------*/
 
-new Swiper ('.wish-slider-1', {
+new Swiper ('.wish-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -206,16 +206,6 @@ new Swiper ('.wish-slider-1', {
   loop: true,
 });
 
-new Swiper ('.wish-slider-2', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 3,
-  autoHeight: true,
-  spaceBetween: 15,
-  loop: true,
-});
 
 /*-------------------------------------------cart-point-----------------------------------*/
 
