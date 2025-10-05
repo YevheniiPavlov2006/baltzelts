@@ -39,6 +39,9 @@ body {
 /*-----------------------------------*/
 
 
+select:focus {
+  outline: none;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -1287,6 +1290,8 @@ input[type="checkbox"]:checked {
   justify-content: space-between;
   align-items: start;
   margin-top: 40px;
+
+  gap: 50px;
 }
 .checkout-content-list {
   background-color: #FAF9F7;
@@ -1346,10 +1351,141 @@ input[type="checkbox"]:checked {
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  width: 100%;
 }
 
 .checkout-content-title {
   font-size: 20px;
   font-weight: 700;
   color: #411825;
+}
+
+.checkout-content-part-in {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 25px;
+
+  width: 100%;
+}
+
+.personal-data-input {
+  background-color: #F2F0EC;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+
+  width: 100%;
+  margin-bottom: 15px;
+}
+.personal-data-input::placeholder {
+  color: #796E73;
+}
+
+.delivery-details-part-in {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.delivery-details-select {
+  color: #796E73;
+}
+.delivery-details-part-in .personal-data-input {
+  margin-bottom: 0;
+}
+
+.delivery-grid-1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.delivery-grid-2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.delivery-grid-3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.delivery-grid-4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.delivery-grid-5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.delivery-grid-6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.delivery-grid-7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+
+.checkout-content-part-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-content-part-top-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #52363F;
+}
+
+.delivery-details-nonavalible-block {
+  background-color: rgba(217, 9, 82, 0.05);
+  border: 1px solid #D90952;
+
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.delivery-details-nonavalible-block-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #411825;
+}
+.delivery-details-nonavalible-block-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #411825;
+}
+
+
+.checkout-block .delivery-list-item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.delivery-order-list-checkpoint {
+  width: 16px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #D8C29D;
+  padding: 3px;
+
+  cursor: pointer;
+}
+
+.delivery-order-list-checkpoint.active {
+  border: 1px solid #411825;
+  .delivery-order-list-checkpoint-point {
+    background-color: #411825;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
 }

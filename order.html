@@ -88,18 +88,124 @@
           <div class="checkout-container-content">
             <div class="checkout-content-part">
               <div class="checkout-content-title">Delivery</div>
+              <div class="checkout-content-part-in">
+                <div class="delivery-content-list">
+                  <div class="delivery-list-item">
+                    <img src="img/delivery-list-icon-1.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">Pick up at Baltzelts</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-dalivery active">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery-list-item">
+                    <img src="img/delivery-list-icon-2.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">DPD. Delivery to parcel terminals</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-dalivery">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery-list-item">
+                    <img src="img/delivery-list-icon-2.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">DPD. Delivery to address. 6.50 €</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-dalivery">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery-list-item">
+                    <img src="img/delivery-list-icon-2.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">Omniva. Delivery to parcel terminals. 8 €</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-dalivery">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery-list-item">
+                    <img src="img/delivery-list-icon-3.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">Express Delivery. €12.00</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-dalivery">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="checkout-content-part">
               <div class="checkout-content-title">Payment</div>
+              <div class="checkout-content-part-in">
+                <div class="delivery-content-list">
+                  <div class="delivery-list-item">
+                    <img src="img/payment-icon-1.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">Payment by card or cash in the store</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-payment active">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="delivery-list-item">
+                    <img src="img/payment-icon-2.svg" alt="">
+                    <div class="delivery-list-item-info">
+                      <div class="delivery-list-item-title">Payment by card</div>
+                      <div class="delivery-order-list-checkpoint delivery-order-list-checkpoint-payment">
+                        <div class="delivery-order-list-checkpoint-point"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-content-part">
+              <div class="checkout-content-part-top">
+                <div class="checkout-content-title">Delivery details</div>
+                <div class="checkout-content-part-top-text">Change</div>
+              </div>
+              <div class="checkout-content-part-in">
+                <div class="delivery-details-nonavalible-block">
+                  <img src="img/non-avalible.svg" alt="">
+                  <div class="delivery-details-nonavalible-block-in">
+                    <div class="delivery-details-nonavalible-block-title">No stores available with your items</div>
+                    <div class="delivery-details-nonavalible-block-text">Text .. Ship to address</div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="checkout-content-part">
               <div class="checkout-content-title">Delivery details</div>
-            </div>
-            <div class="checkout-content-part">
-              <div class="checkout-content-title">Delivery details</div>
+              <div class="checkout-content-part-in delivery-details-part-in">
+                <select class="delivery-details-select personal-data-input delivery-grid-1" name="" id="" >
+                  <option value="1">Country</option>
+                  <option value="2">Country</option>
+                  <option value="3">Country</option>
+                  <option value="4">Country</option>
+                </select>
+                <input class="personal-data-input delivery-grid-2" type="text" placeholder="Address">
+                <input class="personal-data-input delivery-grid-3" type="text" placeholder="Address">
+                <input class="personal-data-input delivery-grid-4" type="text" placeholder="Address">
+                <input class="personal-data-input delivery-grid-5" type="text" placeholder="Address">
+                <input class="personal-data-input delivery-grid-6" type="text" placeholder="Address">
+                <input class="personal-data-input delivery-grid-7" type="text" placeholder="Address">
+
+              </div>
             </div>
             <div class="checkout-content-part">
               <div class="checkout-content-title">Personal data</div>
+              <div class="checkout-content-part-in">
+                <input class="personal-data-input" type="text" placeholder="Name">
+                <input class="personal-data-input" type="text" placeholder="Surname">
+                <input class="personal-data-input" type="text" placeholder="Email">
+                <input class="personal-data-input" type="text">
+              </div>
+            </div>
+            <div class="checkout-content-part">
             </div>
           </div>
           <div class="checkout-content-list">
@@ -217,5 +323,6 @@
   </section>
 
   <script src="app.js"></script>
+  <script src="order.js"></script>
 </body>
 </html>

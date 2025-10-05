@@ -195,8 +195,7 @@ function clamp(min, value, max) {
 
 /*---------------------------------------------------------slider------------------------------------------------------------*/
 
-new Swiper('.wish-slider', {
-
+new Swiper ('.wish-slider-1', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -207,8 +206,18 @@ new Swiper('.wish-slider', {
   loop: true,
 });
 
-/*-------------------------------------------cart-close-----------------------------------*/
+new Swiper ('.wish-slider-2', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 3,
+  autoHeight: true,
+  spaceBetween: 15,
+  loop: true,
+});
 
+/*-------------------------------------------cart-point-----------------------------------*/
 
 
 
