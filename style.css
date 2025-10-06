@@ -1691,9 +1691,9 @@ input[type="checkbox"]:checked {
 }
 .product-main-img {
   width: 100%;
-  border: 1px solid #E0D6C5;
 }
 .product-img-container {
+  border: 1px solid #E0D6C5;
   position: relative;
 }
 
