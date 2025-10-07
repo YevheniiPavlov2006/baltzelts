@@ -2484,3 +2484,43 @@ input[type="checkbox"]:checked {
     font-size: 25px;
   }
 }
+
+
+.wish-block-cards {
+  display: none;
+}
+
+@media(max-width:1050px){
+  .product-block {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .product-wish-swiper {
+    display: none;
+  }
+  .wish-block-cards {
+    display: block;
+    margin-top: 80px;
+  }
+  .wish-block-cards .block-title {
+    text-align: center;
+  }
+  .product-info-top-title {
+    font-size: 25px;
+  }
+  .product-info-top-price {
+    font-size: 30px;
+  }
+}
+@media (max-width:540px){
+  .thumb {
+    width: 100%;
+    height: 100%;
+  }
+  .thumb-arrow {
+    max-height: 100%;
+    height: 100%;
+  }
+}
