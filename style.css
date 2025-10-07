@@ -2157,6 +2157,14 @@ input[type="checkbox"]:checked {
   .promo-banner-subtitle {
     padding-right: 15px;
   }
+
+
+  .under-page-info {
+    margin-top: 25px;
+  }
+  .products-block-top {
+    margin-top: 35px;
+  }
 }
 
 
@@ -2468,11 +2476,11 @@ input[type="checkbox"]:checked {
   .products-block-title {
     font-size: 18px !important;
   }
-}
-.products-block-top {
-  font-size: 25px;
-  padding: 20px;
-}
-.products-block-top span {
-  font-size: 25px;
+  .products-block-top {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .products-block-top span {
+    font-size: 25px;
+  }
 }
