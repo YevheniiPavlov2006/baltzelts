@@ -1906,7 +1906,7 @@ input[type="checkbox"]:checked {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
   .header-side-menu-2 .header-side-menu-item div {
     display: none;
