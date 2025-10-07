@@ -1854,3 +1854,349 @@ input[type="checkbox"]:checked {
   transform: rotate(180deg);
   background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
 }
+
+
+
+/*----------------------------------------------------------adaptive-------------------------------------------------*/
+
+.header-side-menu-adaptive {
+  display: none;
+}
+
+@media (max-width:1250px){
+  .collection-card {
+    width: 150px;
+    height: 400px;
+  }
+
+  .collection-card-block.hoverable {
+    .collection-card {
+        width: 300px;
+    }
+    .collection-card-title {
+      max-width: 260px;
+    }
+  }
+  .collection-card-title {
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+@media(max-width:992px) {
+  .banner-main {
+    margin-top: 25px;
+  }
+  .header-line-gray .container {
+    padding: 30px 25px;
+  }
+  .header-side-menu-1 {
+    display: none;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-side-menu-adaptive {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-side-menu-2 .header-side-menu-item div {
+    display: none;
+  }
+  .header-side-menu-item-search {
+    display: none;
+  }
+  .header-line.header-line-category {
+    display: none;
+  }
+  .header-line-gray {
+    background-color: #FAF9F7;
+  }
+  .header-line-gray .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  }
+  .header {
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width:850px) {
+  .collection-card {
+    width: 100%;
+    height: 45px;
+  }
+  .collection-card-block {
+    width: 100%;
+    max-width: 450px;
+    height: 85px;
+  }
+  .collection-card {
+    height: 85px;
+  }
+  .collection-card-block.mt-50 {
+    margin-top: 0;
+  }
+  .collections-content {
+    flex-direction: column;
+  }
+  .collection-card-content {
+    bottom: 50%;
+    right: 15px;
+    transform: translateY(50%);
+    font-family: 'Playfair Display';
+  }
+  .collection-card-title {
+    max-width: 100%;
+  }
+
+  .collection-card-block.hoverable {
+    .collection-card {
+      height: 85px;
+      max-width: 450px;
+      width: 100%;
+    }
+    .collection-card-title {
+      max-width: 260px;
+    }
+    .collection-card-button {
+      display: none;
+    }
+    .collection-card-title {
+      max-width: 95%;
+      font-size: 35px;
+      font-weight: 400;
+      color: #fff;
+      font-family: 'Playfair Display';
+    }
+    .collection-card-subtitle {
+      display: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    }
+  } 
+}
+
+
+@media (max-width:800px) {
+  .banner-main-title {
+    font-size: 35px;
+  }
+  .banner-main-img {
+    min-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width:768px){
+  .collections-block {
+    margin-top: 80px;
+  }
+
+  .best-seller-block {
+    margin-top: 80px;
+  }
+
+  .find-us {
+    margin-top: 80px;
+  }
+
+  .faq-block {
+    margin-top: 80px;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+
+  .block-title {
+    font-size: 30px;
+  }
+
+  .promo-banners {
+    margin-top: 80px;
+  }
+  .promo-banner-1, .promo-banner-2, .promo-banner-3 {
+    width: 100%;
+
+    background-size: cover;
+  }
+  .promo-banner-1 {
+    background: url("img/promo-banner-1-adaptive-img.png") no-repeat center center;
+    background-size: cover;
+    background-position: top;
+  }
+  .promo-banner-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .promo-banner-3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .promo-banner-1 .promo-banner-content {
+    left: 40px;
+    right: auto;
+    bottom: 50px;
+  }
+}
+
+@media(max-width:650px){
+  .best-seller-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq-block-content {
+    flex-direction: column;
+  }
+
+  .best-seller-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .best-seller-select-part {
+    width: 100%;
+  }
+  .best-seller-select {
+    width: 100%;
+  }
+
+  .page.current {
+    width: 44px;
+    height: 44px;
+  }
+  .page-3 {
+    display: none;
+  }
+  .pager-wrap .pager {
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+  .pager-wrap {
+    padding: 0 5px;
+  }
+
+
+  .footer {
+    padding: 40px 10px;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .footer-top-input-part {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer-top-input::placeholder {
+    max-width: 80%;
+    flex-wrap: wrap;
+  }
+
+
+  .footer-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+
+
+
+
+  .best-seller-sale {
+    font-size: 12px;
+    left: 5px;
+    top: 5px;
+    padding: 5px 10px;
+  }
+  .best-seller-img-part.hoverable {
+    .best-seller-card-btn {
+      padding: 12px 5px;
+      font-size: 12px;
+    }
+    .card-share-btn {
+      display: none;
+    }
+    .card-full-btn {
+      display: none;
+    }
+    .best-seller-card-rbar {
+      top: 5px;
+      right: 5px;
+    }
+    .card-like-btn {
+      width: 28px;
+    }
+  }
+  .best-seller-card-content {
+    text-align: center;
+  }
+  .best-seller-card-name {
+    font-size: 18px;
+  }
+
+
+  .promo-banner-title {
+    font-size: 25px;
+  }
+  .promo-banner-subtitle {
+    padding-right: 15px;
+  }
+}
+
+
+@media (max-width:550px) {
+  .collection-card {
+    height: 85px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .collection-card-block {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .collection-card-block.hoverable {
+    .collection-card {
+      max-width: 100%;
+    }
+    .collection-card-title {
+      font-size: 30px;
+    }
+  }
+  .collection-card-title {
+    font-size: 25px;
+  }
+  .find-us-content {
+    gap: 20px;
+    justify-content: start;
+  }
+  .find-us-content img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .promo-banner-2, .promo-banner-3 {
+    padding: 30px 20px;
+  }
+  .promo-banner-1 .promo-banner-content {
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .banner-main-content {
+    padding: 15px 2px;
+  }
+}

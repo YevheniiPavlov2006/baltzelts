@@ -26,7 +26,14 @@
       <div class="header-line header-line-gray">
         <div class="container">
 
-          <div class="header-side-menu">
+          <div class="header-side-menu-adaptive">
+            <button class="burger-button">
+              <img src="img/burger-button.svg" alt="">
+            </button>
+            <img src="img/header-logo-adaptive.svg" alt="">
+          </div>
+
+          <div class="header-side-menu header-side-menu-1">
             <div class="header-side-menu-item">
               <a href="#">Contacts</a>
             </div>
@@ -40,8 +47,8 @@
 
           <img class="header-logo" src="img/Logo.svg" alt="">
 
-          <div class="header-side-menu">
-            <div class="header-side-menu-item">
+          <div class="header-side-menu header-side-menu-2">
+            <div class="header-side-menu-item header-side-menu-item-search">
               <a href="#" class="seacrh-open">
                 <img src="img/search-icon.svg" alt="">
                 <div>Search</div>
@@ -301,7 +308,6 @@
 
         <div class="pager-wrap" aria-label="Пагинация">
           <nav class="pager" role="navigation">
-            <!-- левая двойная стрелка (как на картинке справа - это последняя, но в примере показаны обе) -->
             <button class="btn" aria-label="Предыдущая страница">
               <svg class="icon left-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 6L9 12l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -309,23 +315,19 @@
             </button>
 
 
-            <!-- текущая выбранная страница в квадрате -->
             <button class="page current" aria-current="page">1</button>
 
 
-            <!-- остальные номера -->
             <button class="page">2</button>
-            <button class="page">3</button>
+            <button class="page page-3">3</button>
 
 
-            <!-- точки -->
             <div class="dots">…</div>
 
 
             <button class="page">10</button>
 
 
-            <!-- правая стрелка -->
             <button class="btn" aria-label="Следующая страница">
               <svg class="icon right-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -333,7 +335,6 @@
             </button>
 
 
-          <!-- двойная стрелка (fast forward) -->
             <button class="btn" aria-label="В конец">
               <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 6l6 6-6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
