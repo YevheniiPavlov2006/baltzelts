@@ -133,6 +133,91 @@
       </div>
     </div>
 
+    <div class="adaptive-filter-block">
+      <div class="adaptive-filter-block-top">
+        <button class="close-adaptive-menu close-filter">
+          <div class="close-adaptive-text">Back</div>
+          <img src="img/arrow-basic.svg" alt="">
+        </button>
+      </div>
+      <div class="products-filter-part">
+        <div class="filter-block">
+          <div class="filter-block-title">Subcategories</div>
+          <div class="filter-block-list">
+            <div class="filter-block-item">Diamonds</div>
+            <div class="filter-block-item active">Wedding</div>
+            <div class="filter-block-item">Woman</div>
+            <div class="filter-block-item">Man</div>
+            <div class="filter-block-item">Silver</div>
+            <div class="filter-block-item">Icons</div>
+            <div class="filter-block-item">Steel</div>
+          </div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-block-title">Material</div>
+          <div class="filter-block-list">
+            <label class="filter-block-list-item checkbox">
+              <input type="checkbox" class="" />
+              <span class="checkmark"></span>
+              <span>Gold <span class="">(150)</span></span>
+            </label>
+
+            <label class="filter-block-list-item checkbox">
+              <input type="checkbox" class="accent-gray-500" />
+              <span class="checkmark"></span>
+              <span>Silver <span class="">(320)</span></span>
+            </label>
+
+            <label class="filter-block-list-item checkbox">
+              <input type="checkbox" class="" checked />
+              <span class="checkmark"></span>
+              <span>Platinum <span class="">(300)</span></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-block-title">Price</div>
+          <div class="filter-block-list filter-block-range">
+
+            <div data-range data-range-min="250" data-range-max="5000" class="range">
+              <div data-range-track class="range__track">
+                <div data-range-fill class="range__fill"></div>
+                
+                <div data-range-control-1 class="range__control range__control-1">
+                  <div data-control-label-1 class="range__label"></div>
+                  <div class="range__indicator"></div>
+                </div>
+
+                <div data-range-control-2 class="range__control range__control-2">
+                  <div data-control-label-2 class="range__label"></div>
+                  <div class="range__indicator"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="filter-range-price">
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <div class="filter-block-title">Size</div>
+          <div class="filter-block-list filter-block-size">
+            <div class="fiter-block-item-size">XS</div>
+            <div class="fiter-block-item-size">S</div>
+            <div class="fiter-block-item-size">M</div>
+            <div class="fiter-block-item-size">L</div>
+            <div class="fiter-block-item-size">XL</div>
+            <div class="fiter-block-item-size">2XL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header-line header-line-gray">
         <div class="container">
@@ -305,6 +390,10 @@
                 <option value="4">Best Seller</option>
               </select>
             </div>
+            <button class="filter-open-btn">
+              <div class="filter-open-btn-text">Filter</div>
+              <img src="img/filter-icon.svg" alt="">
+            </button>
           </div>
 
           <div class="best-seller-content">
@@ -612,7 +701,7 @@
 
               <!-- остальные номера -->
               <button class="page">2</button>
-              <button class="page">3</button>
+              <button class="page page-3">3</button>
 
 
               <!-- точки -->

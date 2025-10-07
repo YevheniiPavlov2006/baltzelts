@@ -39,3 +39,32 @@ document.querySelectorAll('.close-subcategory').forEach(item => {
     document.querySelector('.adaptive-menu-subcategory').classList.remove('opened');
   });
 });
+
+
+document.querySelectorAll('.filter-open-btn').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.adaptive-filter-block').classList.add('opened');
+
+    const body = document.body;
+    const scrollY = window.scrollY;
+
+    body.style.position = 'fixed';
+    body.style.top = `0px`;
+    body.dataset.scrollY = scrollY; 
+  });
+});
+
+
+document.querySelectorAll('.close-filter').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.adaptive-filter-block').classList.remove('opened');
+
+     const body = document.body;
+    const scrollY = body.dataset.scrollY;
+
+    body.style.position = '';
+    body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0'));
+    delete body.dataset.scrollY;
+  });
+});
