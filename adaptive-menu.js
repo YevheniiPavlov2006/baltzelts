@@ -11,7 +11,7 @@ document.querySelectorAll('.burger-button').forEach(item => {
   });
 });
 
-document.querySelectorAll('.close-adaptive-menu').forEach(item => {
+document.querySelectorAll('.close-main-menu').forEach(item => {
   item.addEventListener('click', () => {
     document.querySelector('.adaptive-menu').classList.remove('opened');
 
@@ -22,5 +22,20 @@ document.querySelectorAll('.close-adaptive-menu').forEach(item => {
     body.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0'));
     delete body.dataset.scrollY;
+  });
+});
+
+
+
+document.querySelectorAll('.adaptive-menu-list-line').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.adaptive-menu-subcategory').classList.add('opened');
+  });
+});
+
+
+document.querySelectorAll('.close-subcategory').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.adaptive-menu-subcategory').classList.remove('opened');
   });
 });
