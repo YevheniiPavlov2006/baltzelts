@@ -2541,6 +2541,15 @@ input[type="checkbox"]:checked {
     grid-row-end: 4;
     align-items: start !important;
   }
+
+
+  .contacts-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts-content-card {
+    flex-grow: 1;
+  }
 } 
 
 @media (max-width:700px){
@@ -2551,6 +2560,9 @@ input[type="checkbox"]:checked {
 }
 
 @media (max-width:600px){
+  .contacts-content {
+    margin-top: 20px;
+  }
   .shops-list-item {
     flex-direction: column;
   }
