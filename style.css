@@ -2766,3 +2766,83 @@ input[type="checkbox"]:checked {
 
 
 }
+
+
+
+
+/*--------------------------------------------phonenumber-----------------------------------*/
+.personal-data-input-block {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #F2F0EC;
+
+  width: 100%;
+}
+.personal-data-input-select {
+  width: 100px;
+}
+.personal-data-input-select-option::before {
+  content: '';
+  background: url("img/flag-1-img.png") no-repeat center center;
+}
+.personal-data-input-block .personal-data-input {
+  margin-bottom: 0;
+}
+
+
+
+
+.custom-select {
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+
+  transition: 3s;
+}
+.selected {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.options {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #F2F0EC;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+
+  z-index: 1000;
+
+  transition: 3s;
+  opacity: 0;
+  height: 0;
+}
+.options li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-input{
+  flex:1;
+  padding: 10px 12px;
+  border:0;
+  font-size:15px;
+  outline:none;
+  color: #411825;
+  letter-spacing: 1px;
+}
+.custom-select.open .options {
+  display: block;
+  opacity: 1;
+  height: auto;
+}
+
+.personal-data-input.phone-input::placeholder {
+  letter-spacing: 0px;
+}

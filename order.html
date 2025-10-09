@@ -336,7 +336,19 @@
                 <input class="personal-data-input" type="text" placeholder="Name">
                 <input class="personal-data-input" type="text" placeholder="Surname">
                 <input class="personal-data-input" type="text" placeholder="Email">
-                <input class="personal-data-input" type="text">
+                <div class="personal-data-input-block">
+                  <div class="custom-select personal-data-input">
+                    <div class="selected">
+                      <img src="https://flagcdn.com/w20/lv.png" alt=""> +371
+                    </div>
+                    <ul class="options">
+                      <li><img src="https://flagcdn.com/w20/lv.png" alt=""> +371</li>
+                      <li><img src="https://flagcdn.com/w20/lt.png" alt=""> +370</li>
+                      <li><img src="https://flagcdn.com/w20/ee.png" alt=""> +372</li>
+                    </ul>
+                  </div>
+                  <input id="phoneInput" class="phone-input personal-data-input" type="tel" placeholder="__ __ ___" />
+                </div>
               </div>
             </div>
             <div class="checkout-content-part order-part-checkboxes">
@@ -475,5 +487,7 @@
   <script src="order.js"></script>
   <script src="modals.js"></script>
   <script src="adaptive-menu.js"></script>
+  <script src="phonenumber.js"></script>
+
 </body>
 </html>
