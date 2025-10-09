@@ -589,9 +589,6 @@ button {
   color: #222222;
   max-width: 330px;
 }
-.promo-banner-content img {
-  margin-bottom: 15px;
-}
 .promo-banner-title {
   font-size: 35px;
   font-weight: 400;
@@ -613,9 +610,7 @@ button {
   align-items: center;
 }
 .promo-banner-btn span {
-  font-size: 26px;
   margin-left: 15px;
-  margin-top: -3px;
 }
 
 
