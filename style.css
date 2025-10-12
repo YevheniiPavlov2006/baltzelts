@@ -17,6 +17,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   cursor: default;
+
+  color: #411825;
 }
 
 .wrapper {
@@ -328,6 +330,7 @@ button {
   left: 15px;
 }
 .collection-card-title {
+  font-family: 'Playfair Display';
   font-size: 25px;
   color: #fff;
 
@@ -442,7 +445,6 @@ button {
 .best-seller-select:focus {
   outline: none;
 }
-
 .best-seller-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
