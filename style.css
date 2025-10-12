@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 100%;
 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   cursor: default;
 
@@ -312,11 +312,14 @@ button {
   margin-top: 100px; 
 }
 .block-title {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 400;
   color: rgba(65, 24, 37, 1);
   font-family: 'Playfair Display';
   width: 100%;
+}
+.block-title-main {
+  font-size: 45px;
 }
 .collections-block .block-title {
   text-align: center;
@@ -441,6 +444,7 @@ button {
   font-weight: 600;
   width: 210px;
   padding-left: 15px;
+  color: #411825;
 }
 .best-seller-select:focus {
   outline: none;
@@ -710,17 +714,20 @@ button {
   font-size: 35px;
   font-weight: 400;
   font-family: 'Playfair Display';
+  color: #52363F;
 }
 .promo-banner-subtitle {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Lato';
+  font-family: 'Roboto';
+  color: #52363F;
 }
 .promo-banner-btn {
   font-size: 16px;
   font-weight: 600;
   margin-top: 15px;
-  font-family: 'Lato';
+  font-family: 'Roboto';
+  color: #52363F;
 
   display: flex;
   justify-content: center;
@@ -750,9 +757,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 24px;
   margin-top: 40px;
+}
+
+@media(max-width:1200px){
+  .find-us-content {
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -810,7 +822,7 @@ button {
   letter-spacing: 0.15em;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   color: #E0D6C5;
   text-transform: uppercase;
 }
@@ -839,6 +851,11 @@ button {
 
   font-size: 16px;
   color: #fff;
+}
+.footer-top-input::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Roboto';
 }
 
 .footer-underline {
@@ -971,7 +988,7 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   color: #796E73;
-  font-family: 'Lato';
+  font-family: 'Roboto';
 }
 .products-container .best-seller-content {
   margin-top: 20px;
@@ -1776,7 +1793,7 @@ input[type="checkbox"]:checked {
   font-size: 16px;
   font-weight: 700;
   margin-top: 20px;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   color: #52363F;
 
   display: flex;
