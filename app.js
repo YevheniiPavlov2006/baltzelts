@@ -64,6 +64,15 @@ document.querySelectorAll('.fiter-block-item-size').forEach(item => {
 });
 
 
+document.querySelectorAll('.product-size-content-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.product-size-content-item').forEach(el => {
+      el.classList.remove('active');
+    });
+    item.classList.add('active');
+  });
+});
+
 
 /*------------------------------range-------------------------------*/
 
@@ -74,7 +83,7 @@ ranges.forEach(range => {
   const control2 = range.querySelector('[data-range-control-2]')
 
   const track = range.querySelector('[data-range-track]')
-  const priceOutput = document.querySelector('.filter-range-price') // 👈 добавил
+  const priceOutput = range.closest('.filter-block-list')?.querySelector('.filter-range-price') || document.querySelector('.filter-range-price');
 
   if (!control1 || !control2 || !track) return console.log('cidioc')
 

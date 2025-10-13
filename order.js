@@ -1,23 +1,44 @@
-document.querySelectorAll('.delivery-order-list-checkpoint-dalivery').forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelectorAll('.delivery-order-list-checkpoint-dalivery').forEach(el => {
-      el.classList.remove('active');
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.delivery-list-item-delivery');
+
+  items.forEach(item => {
+    item.addEventListener('click', (e) => {
+      // опционально: если внутри есть кнопка/ссылка и ты не хочешь срабатывать по её клику — проверяй e.target
+      // e.stopPropagation(); // не обязательно
+
+      // снимаем active у всех checkpoint'ов
+      document.querySelectorAll('.delivery-order-list-checkpoint-dalivery').forEach(ch => ch.classList.remove('active'));
+
+      // находим checkpoint внутри текущего item и активируем его
+      const checkpoint = item.querySelector('.delivery-order-list-checkpoint-dalivery');
+      if (checkpoint) checkpoint.classList.add('active');
+      else console.warn('Checkpoint not found inside item', item);
     });
-    item.classList.add('active');
   });
 });
 
-document.querySelectorAll('.delivery-order-list-checkpoint-payment').forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelectorAll('.delivery-order-list-checkpoint-payment').forEach(el => {
-      el.classList.remove('active');
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.delivery-list-item-pay');
+
+  items.forEach(item => {
+    item.addEventListener('click', (e) => {
+      // опционально: если внутри есть кнопка/ссылка и ты не хочешь срабатывать по её клику — проверяй e.target
+      // e.stopPropagation(); // не обязательно
+
+      // снимаем active у всех checkpoint'ов
+      document.querySelectorAll('.delivery-order-list-checkpoint-payment').forEach(ch => ch.classList.remove('active'));
+
+      // находим checkpoint внутри текущего item и активируем его
+      const checkpoint = item.querySelector('.delivery-order-list-checkpoint-payment');
+      if (checkpoint) checkpoint.classList.add('active');
+      else console.warn('Checkpoint not found inside item', item);
     });
-    item.classList.add('active');
   });
 });
 
 
-const checkPoint = document.querySelectorAll('.delivery-order-list-checkpoint-dalivery');
+
+const checkPoint = document.querySelectorAll('.delivery-list-item');
 
 checkPoint.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -35,19 +56,21 @@ checkPoint.forEach(btn => {
 });
 
 
-const checkPoint1 = document.querySelectorAll('.delivery-order-list-checkpoint-payment');
+const checkPoint1 = document.querySelectorAll('.payment-list-item');
 
 checkPoint1.forEach(btn => {
   btn.addEventListener('click', () => {
     // убираем фон у всех карточек
-    document.querySelectorAll('.payment-list-item').forEach(card1 => {
-      card1.classList.remove('gray-bkg');
+    document.querySelectorAll('.payment-list-item').forEach(card => {
+      card.classList.remove('gray-bkg');
     });
 
     // добавляем фон только у карточки, на кнопку которой нажали
-    const card1 = btn.closest('.payment-list-item');
-    if (card1) {
-      card1.classList.add('gray-bkg');
+    const card = btn.closest('.payment-list-item');
+    if (card) {
+      card.classList.add('gray-bkg');
     }
   });
 });
+
+

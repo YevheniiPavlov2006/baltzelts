@@ -430,6 +430,13 @@ button {
   display: flex;
   align-items: center;
 }
+.best-seller-select-part-items {
+  white-space: nowrap;
+  padding-left: 40px;
+
+  font-size: 16px;
+  color: #52363F;
+}
 .best-seller-select-part-label {
   font-size: 16px;
   font-weight: 400;
@@ -442,7 +449,7 @@ button {
   border-left: 2px solid #D8C29D;
   font-size: 16px;
   font-weight: 600;
-  width: 210px;
+  width: 170px;
   padding-left: 15px;
   color: #411825;
 }
@@ -470,7 +477,7 @@ button {
 }
 
 .best-seller-card-name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #411825;
 
@@ -618,6 +625,9 @@ button {
   background:transparent;
   border:none;
   cursor:pointer;
+
+  width:48px;
+  height:48px;
 }
 
 
@@ -636,6 +646,15 @@ button {
 .page:not(.current){
   font-weight:500;
   letter-spacing:0.4px;
+}
+
+.page:not(.current):hover{
+  width:48px;
+  height:48px;
+  background: #E7E5E6;
+  color: #411825;
+  font-weight:400;
+  font-size:20px;
 }
 
 
@@ -1009,6 +1028,26 @@ button {
   width: 100%;
 }
 
+.filter-block-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #52363F;
+
+  border-bottom: 1px solid #52363F;
+
+  padding: 5px 0;
+}
+
+.filter-none-text {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
 
 .filter-block-list {
   display: flex;
@@ -1065,7 +1104,6 @@ input[type="checkbox"]:checked {
 }
 
 .filter-block-list-item input:checked ~ span {
-  font-weight: bold;
 }
 
 .filter-block-size {
@@ -1400,6 +1438,7 @@ input[type="checkbox"]:checked {
   font-size: 16px;
   color: #796E73;
   text-align: center;
+  border: none;
 }
 .cart-list-item-content-title {
   font-size: 18px;
