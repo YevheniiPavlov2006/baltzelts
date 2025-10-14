@@ -156,7 +156,13 @@ button {
     position: absolute;
   }
 }
-
+@media(max-width:992px){
+  .header-side-menu-item:hover {
+  .header-side-menu-item-text {
+    color: rgba(65, 24, 37, 1);
+  }
+}
+}
 
 .header-side-menu-item {
   position: relative;
@@ -1574,7 +1580,22 @@ input[type="checkbox"]:checked {
 }
 
 .delivery-details-select {
+
+  -webkit-appearance: none; /* Chrome, Safari, iOS */
+  -moz-appearance: none;    /* Firefox */
+  appearance: none;   
   color: #796E73;
+
+  background-color: #F2F0EC;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+
+  width: 100%;
+
+  background-image: url("img/select-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center; /* отступ стрелки от правого края */
 }
 .delivery-details-part-in .personal-data-input {
   margin-bottom: 0;
@@ -2077,9 +2098,9 @@ input[type="checkbox"]:checked {
     gap: 20px;
   }
   .header-side-menu-2 {
-    gap: 60px !important;
+    gap: 30px !important;
   }
-  .header-side-menu-2 .header-side-menu-item div {
+  .header-side-menu-item-search, .header-side-menu-item-cart, .header-side-menu-item-wish {
     display: none;
   }
   .header-side-menu-item a:hover {
@@ -2228,6 +2249,9 @@ input[type="checkbox"]:checked {
 }
 
 @media(max-width:650px){
+  .header-side-menu-2 {
+    gap: 10px !important;
+  }
   .best-seller-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -2386,6 +2410,10 @@ input[type="checkbox"]:checked {
 
   .banner-main-content {
     padding: 15px 2px;
+  }
+
+  .header-side-menu-2 {
+    gap: 5px !important;
   }
 }
 
@@ -2972,7 +3000,6 @@ input[type="checkbox"]:checked {
 
 .custom-select {
   position: relative;
-  width: 100px;
   cursor: pointer;
 
   transition: 3s;
@@ -3024,4 +3051,101 @@ input[type="checkbox"]:checked {
   letter-spacing: 0px;
 }
 
+
+
+
+
+/*--------------------------------*/
+/* CSS (скопируй в свой файл) */
+.custom-select {
+  display: inline-block;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  position: relative;
+}
+
+/* кнопка (видимый селект) */
+.custom-select-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  background: #F2F0EC;
+  color: rgba(65, 24, 37, 1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: none;
+  text-align: center;
+
+  outline: none;
+}
+
+@media(max-width:992px){
+  .custom-select-toggle {
+    background: transparent;
+  }
+}
+
+.custom-select-list li:hover {
+  background: #F2F0EC;
+}
+
+.custom-select-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #796E73;
+  margin-left: 6px;
+}
+
+.custom-select-list {
+  position: absolute;
+  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 6px 0 0 0;
+  padding: 6px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: 1px solid #e6e4e2;
+  display: none;
+  z-index: 999;
+  max-height: 240px;
+  min-width: 100px;
+  overflow: auto;
+}
+
+/* пункт списка */
+.custom-select-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+.custom-select.open .custom-select-list {
+  display: block;
+}
+
+.header-adaptive-icon-btn {
+  padding: 0 16px;
+}
+@media (max-width: 480px) {
+  .custom-select-toggle { padding: 14px 5px; font-size: 16px; }
+  .custom-select-list li { padding: 12px 10px; font-size: 16px; }
+  .custom-select-list {
+    min-width: 60px;
+    max-width: 60px;
+  }
+  .header-adaptive-icon-btn {
+    padding: 0 10px;
+  }
+}
 

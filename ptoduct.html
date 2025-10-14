@@ -159,6 +159,12 @@
           <img class="header-logo" src="img/Logo.svg" alt="">
 
           <div class="header-side-menu header-side-menu-2">
+            <div class="header-adaptive-icon-btn">
+              <img src="img/wish-icon.svg" alt="">
+            </div>
+            <div class="header-adaptive-icon-btn">
+              <img src="img/shop-icon.svg" alt="">
+            </div>
             <div class="header-side-menu-item header-side-menu-item-search">
               <a href="#" class="seacrh-open">
                 <div class="header-side-menu-item-text">Search</div>
@@ -175,9 +181,17 @@
               </a>
             </div>
             <div class="header-side-menu-item">
-              <a href="#" class="header-side-menu-item-text">
-                EN
-              </a>
+              <div class="custom-select" id="langSelect" data-value="EN">
+                <button type="button" class="custom-select-toggle" aria-haspopup="listbox" aria-expanded="false" id="langToggle">
+                  <span class="custom-select-value header-side-menu-item-text">EN</span>
+                </button>
+
+                <ul class="custom-select-list" role="listbox" aria-labelledby="langToggle" tabindex="-1">
+                  <li role="option" data-value="EN" aria-selected="true">EN</li>
+                  <li role="option" data-value="RU" aria-selected="false">RU</li>
+                  <li role="option" data-value="LV" aria-selected="false">LV</li>
+                </ul>
+              </div>
             </div>
           </div>
 
