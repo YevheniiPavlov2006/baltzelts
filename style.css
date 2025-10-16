@@ -677,7 +677,6 @@ button {
   height:18px;
   opacity:0.9;
   color: #411825;
-  display:inline-block;
 }
 
 
@@ -1923,7 +1922,7 @@ input[type="checkbox"]:checked {
   font-size: 45px;
   font-weight: 400;
   color: #411825;
-  font-family: 'Playfair Display';
+  font-family: 'Lora';
 }
 .product-info-rbar {
   display: flex;
@@ -2268,12 +2267,6 @@ input[type="checkbox"]:checked {
   .faq-block-content {
     flex-direction: column;
   }
-
-  .best-seller-top {
-    flex-direction: column;
-    align-items: start;
-    gap: 15px;
-  }
   .best-seller-select-part {
     width: 100%;
   }
@@ -2377,6 +2370,18 @@ input[type="checkbox"]:checked {
 
 
 @media (max-width:550px) {
+  .best-seller-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .category-custom .custom-select-toggle {
+    min-width: 100%;
+    padding: 10px 16px !important;
+  }
+  .category-custom {
+    width: 100%;
+  }
   .faq-block-content {
     margin-top: 20px;
   }
@@ -2431,7 +2436,7 @@ input[type="checkbox"]:checked {
   }
 
   .header-side-menu-2 {
-    gap: 5px !important;
+    gap: 0px !important;
   }
 }
 
@@ -2671,9 +2676,6 @@ input[type="checkbox"]:checked {
     flex-direction: column;
     overflow-y: scroll;
     width: 100%;
-  }
-  .best-seller-select-part {
-    display: none;
   }
   .filter-open-btn {
     display: flex;
@@ -3016,6 +3018,25 @@ input[type="checkbox"]:checked {
 
 
 
+.category-custom .custom-select-toggle {
+  background-color: #fff;
+  border-left: 2px solid #D8C29D;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+  height: 20px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #303030;
+}
+.category-custom .custom-select-list {
+  width: 100%;
+}
+
+
 
 .custom-select {
   position: relative;
@@ -3077,7 +3098,6 @@ input[type="checkbox"]:checked {
 /*--------------------------------*/
 /* CSS (скопируй в свой файл) */
 .custom-select {
-  display: inline-block;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   position: relative;
 }
@@ -3196,5 +3216,32 @@ input[type="checkbox"]:checked {
 .custom-select-delivery .custom-select-value {
   font-size: 16px;
   color: #796E73;
+
+}
+
+
+.best-seller-card-price {
+  display: flex;
+  align-items: center;
+}
+
+.best-seller-card-price-sale::after {
+  content: '399.99 €';
+  text-decoration: line-through;
+  text-decoration-color: #796E73;
+  font-size: 12px;
+  margin-left: 5px;
+  text-decoration-skip-ink: none;
+}
+@media (max-width:768px){
+  .best-seller-card-price {
+    margin-top: 3px;
+  }
+  .best-seller-card-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
 }
