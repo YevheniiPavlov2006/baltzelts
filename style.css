@@ -2376,7 +2376,8 @@ input[type="checkbox"]:checked {
     gap: 15px;
   }
   .category-custom .custom-select-toggle {
-    min-width: 100%;
+    display: flex;
+    flex: 1 1 auto;
     padding: 10px 16px !important;
   }
   .category-custom {
@@ -3021,7 +3022,6 @@ input[type="checkbox"]:checked {
 .category-custom .custom-select-toggle {
   background-color: #fff;
   border-left: 2px solid #D8C29D;
-  width: 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3033,7 +3033,13 @@ input[type="checkbox"]:checked {
   color: #303030;
 }
 .category-custom .custom-select-list {
+  min-width: 100%;
   width: 100%;
+}
+@media (min-width:550px) {
+  .category-custom .custom-select-toggle {
+    width: 270px;
+  }
 }
 
 
