@@ -1483,6 +1483,8 @@ input[type="checkbox"]:checked {
   gap: 50px;
 }
 .checkout-content-list {
+  position: sticky;
+  top: 0px;
   background-color: #FAF9F7;
   padding: 30px;
   min-width: 380px;
@@ -2931,6 +2933,7 @@ input[type="checkbox"]:checked {
     gap: 20px;
   }
   .checkout-content-list {
+    position: static;
     max-width: 100%;
     width: 100%;
     min-width: auto;
@@ -3149,3 +3152,25 @@ input[type="checkbox"]:checked {
   }
 }
 
+
+.custom-select-delivery .custom-select {
+  display: block;
+}
+
+.custom-select-delivery .custom-select-list {
+  min-width: 100%;
+}
+.custom-select-delivery .custom-select-toggle {
+  padding: 0;
+}
+.custom-select-delivery .custom-select-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-select-delivery .custom-select-value {
+  font-size: 16px;
+  color: #796E73;
+
+}

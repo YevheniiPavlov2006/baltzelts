@@ -321,13 +321,21 @@
             </div>
             <div class="checkout-content-part">
               <div class="checkout-content-title">Delivery details</div>
-              <div class="checkout-content-part-in delivery-details-part-in">
-                <select class="delivery-details-select delivery-grid-1" name="" id="" >
-                  <option value="1">Country</option>
-                  <option value="2">Country</option>
-                  <option value="3">Country</option>
-                  <option value="4">Country</option>
-                </select>
+              <div class="checkout-content-part-in delivery-details-part-in custom-select-delivery">
+                <div class="custom-select delivery-details-select delivery-grid-1" id="" data-value="EN">
+                  <button type="button" class="custom-select-toggle"  aria-expanded="false" id="">
+                    <span class="custom-select-value">EN</span>
+                    <img src="img/select-arrow-icon.svg" alt="">
+                  </button>
+                  
+
+                  <ul class="custom-select-list" role="listbox" aria-labelledby="langToggle" tabindex="-1">
+                    <li role="option" data-value="lv" aria-selected="true">Latvia</li>
+                    <li role="option" data-value="de" aria-selected="false">Germany</li>
+                    <li role="option" data-value="at" aria-selected="false">Austria</li>
+                    <li role="option" data-value="pl" aria-selected="false">Poland</li>
+                  </ul>
+                </div>
                 <input class="personal-data-input delivery-grid-2" type="text" placeholder="Address">
                 <input class="personal-data-input delivery-grid-3" type="text" placeholder="Address">
                 <input class="personal-data-input delivery-grid-4" type="text" placeholder="Address">
@@ -495,6 +503,7 @@
   </section>
 
   <script src="app.js"></script>
+  <script src="select-castom.js"></script>
   <script src="order.js"></script>
   <script src="modals.js"></script>
   <script src="adaptive-menu.js"></script>
