@@ -245,7 +245,7 @@ button {
 
 .header-logo {
   position: absolute;
-  top: 45px;
+  top: 55px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -3250,4 +3250,105 @@ input[type="checkbox"]:checked {
     display: flex;
   }
 
+}
+
+
+.shop-panel {
+  top: -120%;
+  transition: 0.3s;
+
+  width: 100%;
+  padding: 80px 0;
+
+  height: 35vh;
+
+  position: fixed;
+  left: 0;
+
+  background-color: #fff;
+  z-index: 1000000;
+}
+.shop-panel.opened {
+  top: 0;
+}
+
+.shop-panel .container {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 900px;
+}
+.shop-panel-in {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.shop-panel-close {
+  position: absolute;
+  top: 0;right: -50px;
+}
+.shop-panel-in-block {
+  width: 100%;
+}
+.shop-panel-in-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  background-color: #E0D6C5;
+  padding: 20px;
+}
+.shop-panel-in-top-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #411825;
+}
+.shop-panel-in-top-subtitle {
+  font-size: 14px;
+  color: hsl(341, 46%, 17%);
+}
+
+.shop-panel-in-content {
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+}
+.shop-panel-in-content-in {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.shop-panel-in-content-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  border-bottom: 1px solid #fff;
+  padding: 15px 10px;
+}
+.shop-panel-in-content-card-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(82, 54, 63, 1);
+}
+.shop-panel-in-content-card-title {
+  color: rgba(176, 122, 30, 1);
+  font-size: 16px;
+  font-weight: 700;
+}
+.shop-panel-in-content-card-subtitle {
+  font-size: 16px;
+  color: rgba(121, 110, 115, 1);
+}
+.shop-panel-in-content-card-adress {
+  color: rgba(82, 54, 63, 1);
+  font-size: 16px;
+}
+.shop-panel-in-content-in::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

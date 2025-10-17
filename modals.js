@@ -13,4 +13,19 @@ document.querySelectorAll('.search-panel-close').forEach(item => {
 })
 
 
+document.querySelectorAll('.shop-panel-open').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.shop-panel').classList.add('opened');
+    document.querySelector('.modals-bkg-blur').classList.add('opened')
+  })
+})
+
+document.querySelectorAll('.shop-panel-close').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.shop-panel').classList.remove('opened');
+    document.querySelector('.modals-bkg-blur').classList.remove('opened')
+  })
+})
+
+
 
