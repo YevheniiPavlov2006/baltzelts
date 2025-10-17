@@ -365,11 +365,25 @@ button {
   content: "";
   position: absolute;
   inset: 0; /* сверху/снизу/слева/справа = 0 */
-  background: url("img/collection-card-img.png") no-repeat center center;
   background-size: cover;
-  filter: blur(1.4px);
   z-index: -1;
 }
+.collection-card-1::before {
+  background: url("img/collection-card-img.png") no-repeat center center;
+}
+.collection-card-2::before {
+  background: url("img/collection-card-img-2.png") no-repeat center center;
+}
+.collection-card-3::before {
+  background: url("img/collection-card-img-3.png") no-repeat center center;
+}
+.collection-card-4::before {
+  background: url("img/collection-card-img-4.png") no-repeat center center;
+}
+.collection-card-5::before {
+  background: url("img/collection-card-img-5.png") no-repeat center center;
+}
+
 
 .collection-card-block {
   transition: all 3s ease;
@@ -383,13 +397,7 @@ button {
     width: 370px;
   }
   .collection-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("img/collection-card-img.png") no-repeat center center;
-    background-size: cover;
     filter: blur(0px);
-    z-index: -1;
   }
   .collection-card-button {
     display: block;
