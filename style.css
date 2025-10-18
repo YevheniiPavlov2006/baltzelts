@@ -3360,3 +3360,44 @@ input[type="checkbox"]:checked {
 .shop-panel-in-content-in::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+
+@media (max-width:650px){
+  .shop-panel {
+    padding: 0;
+    height: 100vh;
+
+    background-color: rgb(247, 247, 247);
+  }
+  .shop-panel-in-content-in {
+    max-height: 100%;
+  }
+  .shop-panel .container {
+    padding: 0;
+  }
+  .shop-panel-in {
+  }
+  .shop-panel-close {
+    right: 0;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width:400px){
+  .shop-panel-in-content {
+    padding: 20px 5px;
+  }
+}
+
+
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
