@@ -3210,6 +3210,8 @@ input[type="checkbox"]:checked {
   max-height: 240px;
   min-width: 100px;
   overflow: auto;
+
+  z-index: 1000000000000000000000000000000000000000000000000;
 }
 
 /* пункт списка */
