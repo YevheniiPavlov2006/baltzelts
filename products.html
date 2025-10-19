@@ -461,12 +461,20 @@
             <div class="block-title products-block-title">DIAMONDS</div>
             <div class="best-seller-select-part">
               <div class="best-seller-select-part-label">Sort by</div>
-              <select class="best-seller-select" name="" id="">
-                <option value="1">Best Seller</option>
-                <option value="2">Best Seller</option>
-                <option value="3">Best Seller</option>
-                <option value="4">Best Seller</option>
-              </select>
+              <div class="custom-select best-seller-select" id="" data-value="EN">
+                <button type="button" class="custom-select-toggle"  aria-expanded="false" id="">
+                  <span class="custom-select-value">Best Seller</span>
+                  <img src="img/custom-select-arrow-black.svg" alt="">
+                </button>
+                
+
+                <ul class="custom-select-list" role="listbox" aria-labelledby="langToggle" tabindex="-1">
+                  <li role="option" data-value="bs" aria-selected="true">Best Seller</li>
+                  <li role="option" data-value="bs" aria-selected="false">Best Seller</li>
+                  <li role="option" data-value="bs" aria-selected="false">Best Seller</li>
+                  <li role="option" data-value="bs" aria-selected="false">Best Seller</li>
+                </ul>
+              </div>
               <div class="best-seller-select-part-items">531 items</div>
             </div>
             <button class="filter-open-btn">
@@ -904,6 +912,7 @@
   </section>
 
   <script src="modals.js"></script>
+  <script src="select-castom.js"></script>
   <script src="adaptive-menu.js"></script>
   <script src="app.js"></script>
 </body>
