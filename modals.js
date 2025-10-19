@@ -27,5 +27,17 @@ document.querySelectorAll('.shop-panel-close').forEach(item => {
   })
 })
 
+document.querySelectorAll('.card-open-screen').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.card-screen').classList.add('opened');
+  })
+})
+
+document.querySelectorAll('.card-screen-close').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.card-screen').classList.remove('opened');
+  })
+})
+
 
 
