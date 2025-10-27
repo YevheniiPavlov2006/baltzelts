@@ -1,8 +1,8 @@
 document.querySelectorAll('.burger-button').forEach(item => {
   item.addEventListener('click', () => {
-    document.querySelector('.adaptive-menu').classList.add('opened');
-    document.querySelector('.header').classList.add('fixed')
-    document.querySelector('.section').classList.add('mt')
+    document.querySelector('.adaptive-menu').classList.toggle('opened');
+    document.querySelector('.header').classList.toggle('fixed')
+    document.querySelector('.section').classList.toggle('mt')
   });
 });
 
