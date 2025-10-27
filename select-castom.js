@@ -1,4 +1,4 @@
-// ========== Модуль 1 (первый IIFE) ==========
+// // ========== Модуль 1 (первый IIFE) ==========
 (function () {
   const root = document.getElementById('langSelect');
   if (!root) return;
@@ -56,7 +56,7 @@
     // убрать классы фокуса
     options.forEach(o => o.classList.remove('focused'));
     // focus toggle без скролла
-    safeFocus(toggle);
+    // safeFocus(toggle);
   }
 
   function toggleList() {
@@ -161,7 +161,7 @@
 })();
 
 
-// ========== Модуль 2 (второй IIFE) ==========
+// ========== Модуль 2 (второй IIFE) ==========Q
 (function () {
   document.addEventListener('DOMContentLoaded', () => {
     try {
@@ -365,7 +365,6 @@
     }
   });
 })();
-
 
 (function () {
   // Helper: focus без скролла (fallback)
@@ -590,4 +589,6 @@
     focusItem(inst.focusedIndex);
   }); // roots.forEach
 })();
+
+
 

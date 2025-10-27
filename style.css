@@ -362,30 +362,28 @@ button {
   transition: all 0.4s ease;
 
 }
-.collection-card::before {
-  content: "";
-  position: absolute;
+.collection-card {
   inset: 0; /* сверху/снизу/слева/справа = 0 */
   background-size: cover;
   z-index: -1;
 }
-.collection-card-1::before {
+.collection-card-1 {
   background: url("img/collection-card-img.png") no-repeat center center;
   background-size: cover;
 }
-.collection-card-2::before {
+.collection-card-2 {
   background: url("img/collection-card-img-2.png") no-repeat center center;
   background-size: cover;
 }
-.collection-card-3::before {
+.collection-card-3 {
   background: url("img/collection-card-img-3.png") no-repeat center center;
   background-size: cover;
 }
-.collection-card-4::before {
+.collection-card-4 {
   background: url("img/collection-card-img-4.png") no-repeat center center;
   background-size: cover;
 }
-.collection-card-5::before {
+.collection-card-5 {
   background: url("img/collection-card-img-5.png") no-repeat center center;
   background-size: cover;
 }
@@ -3209,9 +3207,15 @@ input[type="checkbox"]:checked {
   z-index: 20000000000000000000000000000000000000000000000000000000000000000;
 
 }
-.option {
-}
 
+.custom-select-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
 /* пункт списка */
 .custom-select-list .option {
   padding: 10px 20px;
@@ -3547,4 +3551,9 @@ body::-webkit-scrollbar {
 }
 .section.mt {
   margin-top: 1000px;
+}
+
+
+.phone-input-select {
+  width: auto;
 }
