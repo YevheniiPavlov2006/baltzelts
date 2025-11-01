@@ -1147,7 +1147,7 @@ button {
   border-color: #52363F;
 }
 
-input[type="checkbox"]:checked {
+.checkbox:checked {
   accent-color: #D8C29D;
   border: none;
   color: #fff;
@@ -1731,6 +1731,7 @@ input[type="checkbox"]:checked {
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid #D8C29D;
+  background-color: transparent !important;
 
   position: relative;
   cursor: pointer;
@@ -3601,4 +3602,35 @@ body::-webkit-scrollbar {
 
 .phone-input-select {
   width: auto;
+}
+
+
+.checkbox-cyrcle {
+  border-radius: 50% !important;
+  width: 16px;
+  aspect-ratio: 1;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #411825;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.checkbox-cyrcle:checked {
+  background-color: #411825;
+}
+
+.checkbox-cyrcle:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60%;
+  height: 60%;
+  background: #411825;
+  border-radius: 50%; /* белая точка внутри */
 }

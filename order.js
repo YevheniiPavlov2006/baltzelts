@@ -1,37 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const items = document.querySelectorAll('.delivery-list-item-delivery');
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".delivery-order-list-checkpoint-dalivery");
 
-  items.forEach(item => {
-    item.addEventListener('click', (e) => {
-      // опционально: если внутри есть кнопка/ссылка и ты не хочешь срабатывать по её клику — проверяй e.target
-      // e.stopPropagation(); // не обязательно
-
-      // снимаем active у всех checkpoint'ов
-      document.querySelectorAll('.delivery-order-list-checkpoint-dalivery').forEach(ch => ch.classList.remove('active'));
-
-      // находим checkpoint внутри текущего item и активируем его
-      const checkpoint = item.querySelector('.delivery-order-list-checkpoint-dalivery');
-      if (checkpoint) checkpoint.classList.add('active');
-      else console.warn('Checkpoint not found inside item', item);
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        // снимаем отметку со всех остальных
+        checkboxes.forEach(other => {
+          if (other !== checkbox) {
+            other.checked = false;
+          }
+        });
+      }
     });
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const items = document.querySelectorAll('.delivery-list-item-pay');
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".delivery-order-list-checkpoint-payment");
 
-  items.forEach(item => {
-    item.addEventListener('click', (e) => {
-      // опционально: если внутри есть кнопка/ссылка и ты не хочешь срабатывать по её клику — проверяй e.target
-      // e.stopPropagation(); // не обязательно
-
-      // снимаем active у всех checkpoint'ов
-      document.querySelectorAll('.delivery-order-list-checkpoint-payment').forEach(ch => ch.classList.remove('active'));
-
-      // находим checkpoint внутри текущего item и активируем его
-      const checkpoint = item.querySelector('.delivery-order-list-checkpoint-payment');
-      if (checkpoint) checkpoint.classList.add('active');
-      else console.warn('Checkpoint not found inside item', item);
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        // снимаем отметку со всех остальных
+        checkboxes.forEach(other => {
+          if (other !== checkbox) {
+            other.checked = false;
+          }
+        });
+      }
     });
   });
 });
