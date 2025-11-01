@@ -1933,11 +1933,15 @@ input[type="checkbox"]:checked {
   width: 100%;
 }
 .product-main-img {
-  width: 100%;
+  max-width: 340px;
 }
 .product-img-container {
   border: 1px solid #E0D6C5;
   position: relative;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -3139,6 +3143,7 @@ input[type="checkbox"]:checked {
 .phone-input{
   flex:1;
   padding: 10px 12px;
+  padding-left: 0;
   border:0;
   font-size:15px;
   outline:none;
