@@ -129,6 +129,23 @@ button {
   transition: 0.3s;
 }
 
+.header-side-menu-item-cart-number {
+  width: 16px;
+  aspect-ratio: 1;
+  background-color: #411825;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -8px;
+  left: -15px;
+}
+
+
 .header-side-menu-item:hover {
   .header-side-menu-item-text {
     color: #D8C29D;
