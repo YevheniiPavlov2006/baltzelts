@@ -39,28 +39,6 @@ const selected = select.querySelector('.selected');
 const options = select.querySelectorAll('.options li');
 const hiddenInput = document.querySelector('#phone_code');
 
-options.forEach(option => {
-  option.addEventListener('click', () => {
-    const code = option.dataset.code;
-    selected.innerHTML = option.innerHTML; // Обновляем выбранный элемент
-    hiddenInput.value = code; // Устанавливаем значение в hidden input
-
-    // Триггерим событие change, чтобы можно было отловить изменение
-    const event = new Event('change', { bubbles: true });
-    hiddenInput.dispatchEvent(event);
-
-    // (по желанию) закрываем список, если у тебя есть логика для этого
-    select.classList.remove('open');
-  });
-});
-
-
-document.querySelector('#phone_code').addEventListener('change', (e) => {
-  console.log('Изменён телефонный код:', e.target.value);
-});
-
-
-
 /*--------------------------только цифры----------------------*/
 
 const phoneInput = document.querySelector('.phone-input');
@@ -74,6 +52,32 @@ phoneInput.addEventListener('input', (e) => {
     e.target.value = e.target.value.slice(0, 9);
   }
 });
+
+
+
+const customSelect = document.querySelector('.phone-input-select');
+
+const hiddenCode = document.querySelector('input[name="phone_code"]');
+const hiddenCountry = document.querySelector('input[name="country"]');
+
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    // Меняем отображение выбранного
+    selected.innerHTML = option.innerHTML;
+
+    // Обновляем hidden inputs
+    hiddenCode.value = option.textContent.trim().split(' ')[0]; // получаем код
+    hiddenCountry.value = option.getAttribute('data-country');
+
+    console.log('Selected phone code:', hiddenCode.value);
+    console.log('Selected country:', hiddenCountry.value);
+
+    // Закрытие списка (если нужно)
+    customSelect.classList.remove('active');
+  });
+});
+
+
 
 
 
