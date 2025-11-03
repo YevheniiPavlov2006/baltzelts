@@ -2060,48 +2060,71 @@ button {
 
 
 
-.thumb-row {
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-top:14px
+.product-photos-part { width:100%; min-width: 565px;
 }
-.thumbs {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1
+.product-img-container { border:1px solid #E0D6C5; aspect-ratio:1; display:flex; justify-content:center; align-items:center; }
+.product-main-img { max-width:340px; transition:opacity .2s ease; }
+
+.thumb-row { display:flex; align-items:center; gap:12px; margin-top:14px;position: relative; overflow: hidden; }
+
+.thumbs-wrap {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: calc((117px + 12px) * 4 - 12px); /* 4 миниатюры по 115px и промежутки по 12px */
+  height: 117px;
 }
+.thumbs { display:flex; gap:12px; transition: transform .3s ease; }
+
 .thumb {
-  width: 115px;
-  height: 115px;
-  padding:10px;
-  background:#fff;
+  width:115px; 
+  height:115px;
   border:1px solid #e7dfd7;
-  display:inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  background:#fff;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; flex-shrink:0;
+  position:relative;
 }
-.thumb img {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  border-radius:2px
-}
-.thumb.active {
-  border: 1px solid #B07A1E;
-  padding:9px
-}
+.thumb img { width:100%; height:100%; object-fit:cover; border-radius:2px; }
+
+.thumb.active { border:1px solid #B07A1E; }
 
 .thumb-arrow {
-  padding: 35px 10px;
-  height: 115px;
-  width: 38px;
-  transform: rotate(180deg);
+  width:38px; height:115px;
   background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
+  border:none; cursor:pointer; flex-shrink:0;
+  transform:rotate(180deg);
 }
+
+.thumb-arrow-container {
+  position: absolute;
+  right: 0;
+  padding: 0 0 0 20px;
+  background-color: #fff;
+}
+
+@media(max-width:600px){
+  .product-photos-part { 
+    width:100%; min-width: calc(100% - 40px);
+  }
+  .product-main-img {
+    max-width: calc(100% - 30px);
+  }
+}
+@media(max-width:380px){
+  .thumb-arrow-container {
+    position: absolute;
+    right: 0;
+    padding: 0 0 0 10px;
+    background-color: #fff;
+  }
+  .thumb-arrow {
+    width:34px; height:115px;
+    background: url("img/swiper-button-icon.svg") no-repeat center center #F2F0EC;
+    border:none; cursor:pointer; flex-shrink:0;
+    transform:rotate(180deg);
+  }
+}
+
 
 
 
@@ -2799,16 +2822,6 @@ button {
   }
   .product-info-top-price {
     font-size: 30px;
-  }
-}
-@media (max-width:540px){
-  .thumb {
-    width: 100%;
-    height: 100%;
-  }
-  .thumb-arrow {
-    max-height: 100%;
-    height: 100%;
   }
 }
 
@@ -3634,3 +3647,6 @@ body::-webkit-scrollbar {
   background: #411825;
   border-radius: 50%; /* белая точка внутри */
 }
+
+
+
