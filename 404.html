@@ -5,71 +5,387 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ошибка 404 — Страница не найдена</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #0d0d0d;
-      color: #fff;
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 10rem;
-      font-weight: 700;
-      margin: 0;
-      letter-spacing: -5px;
-      color: #ffffff10;
-      position: relative;
-    }
-
-    h1::after {
-      content: "404";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      color: #fff;
-      text-shadow: 0 0 10px #ffffff40;
-      animation: blink 2s infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
-    }
-
-    p {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-
-    a {
-      margin-top: 30px;
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-      border: 1px solid #fff;
-      padding: 10px 25px;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-    }
-
-    a:hover {
-      background: #fff;
-      color: #000;
-    }
-  </style>
+  <link rel="stylesheet" href="modals.css">
 </head>
 <body>
-  <h1>404</h1>
-  <p>Похоже, этой страницы не существует или она была удалена.</p>
-  <a href="/">Вернуться на главную</a>
+
+  <div class="modals-bkg-blur"></div>
+
+  <div class="search-panel">
+    <div class="container">
+      <div class="searh-panel-in">
+        <input type="text" placeholder="SEARCH">
+        <div class="search-panel-close"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shop-panel">
+    <div class="container">
+      <div class="shop-panel-in">
+        <div class="shop-panel-in-block">
+          <div class="shop-panel-in-top">
+            <div class="shop-panel-in-top-title">Product availability</div>
+            <div class="shop-panel-in-top-subtitle">This product is available in 4 stores</div>
+          </div>
+          <div class="shop-panel-in-content">
+            <div class="shop-panel-in-content-in">
+              <div class="shop-panel-in-content-card">
+                <div class="shop-panel-in-content-card-info">
+                  <div class="shop-panel-in-content-card-title">BALTZELTS - Alfa</div>
+                  <div class="shop-panel-in-content-card-subtitle">Usually ready in 24 hours</div>
+                  <div class="shop-panel-in-content-card-adress">Brīvības iela 372, Rīga LV-100, Latvija</div>
+                </div>
+                <div class="shop-panel-in-content-card-btn">
+                  <div class="shop-panel-in-content-card-btn">More</div>
+                  <img src="img/arrow-basic.svg" alt="">
+                </div>
+              </div>
+              <div class="shop-panel-in-content-card">
+                <div class="shop-panel-in-content-card-info">
+                  <div class="shop-panel-in-content-card-title">BALTZELTS - Alfa</div>
+                  <div class="shop-panel-in-content-card-subtitle">Usually ready in 24 hours</div>
+                  <div class="shop-panel-in-content-card-adress">Brīvības iela 372, Rīga LV-100, Latvija</div>
+                </div>
+                <div class="shop-panel-in-content-card-btn">
+                  <div class="shop-panel-in-content-card-btn">More</div>
+                  <img src="img/arrow-basic.svg" alt="">
+                </div>
+              </div>
+              <div class="shop-panel-in-content-card">
+                <div class="shop-panel-in-content-card-info">
+                  <div class="shop-panel-in-content-card-title">BALTZELTS - Alfa</div>
+                  <div class="shop-panel-in-content-card-subtitle">Usually ready in 24 hours</div>
+                  <div class="shop-panel-in-content-card-adress">Brīvības iela 372, Rīga LV-100, Latvija</div>
+                </div>
+                <div class="shop-panel-in-content-card-btn">
+                  <div class="shop-panel-in-content-card-btn">More</div>
+                  <img src="img/arrow-basic.svg" alt="">
+                </div>
+              </div>
+              <div class="shop-panel-in-content-card">
+                <div class="shop-panel-in-content-card-info">
+                  <div class="shop-panel-in-content-card-title">BALTZELTS - Alfa</div>
+                  <div class="shop-panel-in-content-card-subtitle">Usually ready in 24 hours</div>
+                  <div class="shop-panel-in-content-card-adress">Brīvības iela 372, Rīga LV-100, Latvija</div>
+                </div>
+                <div class="shop-panel-in-content-card-btn">
+                  <div class="shop-panel-in-content-card-btn">More</div>
+                  <img src="img/arrow-basic.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop-panel-close search-panel-close"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+      <div class="header-line header-line-gray">
+        <div class="container">
+
+          <div class="header-side-menu-adaptive">
+            <button class="burger-button">
+              <img src="img/burger-button.svg" alt="">
+            </button>
+            <img src="img/header-logo-adaptive.svg" alt="">
+          </div>
+
+          <div class="header-side-menu header-side-menu-1">
+            <div class="header-side-menu-item">
+              <a href="#" class="header-side-menu-item-text">Contacts</a>
+            </div>
+            <div class="header-side-menu-item">
+              <a href="#" class="header-side-menu-item-text">Shops</a>
+            </div>
+            <div class="header-side-menu-item">
+              <a href="#" class="header-side-menu-item-text">Delivery</a>
+            </div>
+          </div>
+
+          <img class="header-logo" src="img/Logo.svg" alt="">
+
+          <div class="header-side-menu header-side-menu-2">
+            <div class="header-adaptive-icon-btn">
+              <img src="img/wish-icon.svg" alt="">
+            </div>
+            <div class="header-adaptive-icon-btn shop-panel-open">
+              <img src="img/shop-icon.svg" alt="">
+            </div>
+            <div class="header-side-menu-item header-side-menu-item-search">
+              <a href="#" class="seacrh-open">
+                <div class="header-side-menu-item-text">Search</div>
+              </a>
+            </div>
+            <div class="header-side-menu-item header-side-menu-item-cart">
+              <a href="#" class="shop-panel-open">
+                <div class="header-side-menu-item-text">Cart</div>
+              </a>
+            </div>
+            <div class="header-side-menu-item header-side-menu-item-wish">
+              <a href="#">
+                <div class="header-side-menu-item-text">Wishlist</div>
+              </a>
+            </div>
+            <div class="header-side-menu-item">
+              <div class="custom-select" id="langSelect" data-value="EN">
+                <button type="button" class="custom-select-toggle" aria-haspopup="listbox" aria-expanded="false" id="langToggle">
+                  <span class="custom-select-value header-side-menu-item-text">EN</span>
+                </button>
+
+                <ul class="custom-select-list" role="listbox" aria-labelledby="langToggle" tabindex="-1">
+                  <li role="option" data-value="EN" aria-selected="true">EN</li>
+                  <li role="option" data-value="RU" aria-selected="false">RU</li>
+                  <li role="option" data-value="LV" aria-selected="false">LV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="header-line header-line-category">
+        <div class="container">
+          <div class="header-category-item">
+            <a href="">Relevant</a>
+          </div>
+           <div class="header-category-item">
+            <a href="">Woman</a>
+          </div>
+           <div class="header-category-item">
+            <a href="">Man</a>
+          </div>
+           <div class="header-category-item">
+            <a href="">Children</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+  <section class="section">
+
+    <div class="adaptive-menu">
+      <div class="adaptive-menu-top">
+        <button class="close-adaptive-menu close-main-menu">
+          <div class="close-adaptive-text">Back</div>
+          <img src="img/arrow-basic.svg" alt="">
+        </button>
+      </div>
+
+      <input type="text" placeholder="search" class="adaptive-menu-seacrh">
+
+      <div class="adaptive-menu-list">
+        <div class="adaptive-menu-list-line">
+          <div class="adaptive-menu-list-line-text">Relevant</div>
+          <img src="img/arrow-gold.svg" alt="">
+        </div>
+        <div class="adaptive-menu-list-line">
+          <div class="adaptive-menu-list-line-text">woman</div>
+          <img src="img/arrow-gold.svg" alt="">
+        </div>
+        <div class="adaptive-menu-list-line">
+          <div class="adaptive-menu-list-line-text">Man</div>
+          <img src="img/arrow-gold.svg" alt="">
+        </div>
+        <div class="adaptive-menu-list-line">
+          <div class="adaptive-menu-list-line-text">Children</div>
+          <img src="img/arrow-gold.svg" alt="">
+        </div>
+      </div>
+
+      <div class="adaptive-menu-bottom">
+        <div class="header-side-menu-item">
+          <a href="#">Contacts</a>
+        </div>
+        <div class="header-side-menu-item">
+          <a href="#">Shops</a>
+        </div>
+        <div class="header-side-menu-item">
+          <a href="#">Delivery</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="adaptive-menu-subcategory">
+      <div class="adaptive-subcategory-top">
+        <button class="close-adaptive-menu close-subcategory">
+          <div class="close-adaptive-text">Back</div>
+          <img src="img/arrow-basic.svg" alt="">
+        </button>
+        <div class="adaptive-subcategory-title">Woman</div>
+      </div>
+
+      <div class="adaptive-subcategory-list">
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Свадебные кольца</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Помолвочные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца на заказ</div>
+          </div>
+        </div>
+
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Бриллианты</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Серьги</div>
+            <div class="adaptive-subcategory-list-item">Кольца</div>
+            <div class="adaptive-subcategory-list-item">Кулоны</div>
+            <div class="adaptive-subcategory-list-item">Браслеты</div>
+          </div>
+        </div>
+
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Бриллианты</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Серьги</div>
+            <div class="adaptive-subcategory-list-item">Кольца</div>
+            <div class="adaptive-subcategory-list-item">Кулоны</div>
+            <div class="adaptive-subcategory-list-item">Браслеты</div>
+          </div>
+        </div>
+
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Свадебные кольца</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Помолвочные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца на заказ</div>
+          </div>
+        </div>
+
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Свадебные кольца</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Помолвочные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца на заказ</div>
+          </div>
+        </div>
+
+        <div class="adaptive-subcategory-list-block">
+          <div class="adaptive-subcategory-list-title">Свадебные кольца</div>
+          <div class="adaptive-subcategory-list-list">
+            <div class="adaptive-subcategory-list-item">Помолвочные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца</div>
+            <div class="adaptive-subcategory-list-item">Свадебные кольца на заказ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <div class="under-page-info">
+        <a href="home.html" class="prev-page">home</a>
+        <a href="home.html" class="prev-page">cat</a>
+        <a href="rules.html" class="curent-page">404</a>
+      </div>
+
+      <div class="page-404">
+        <div class="page-404-title">Oops! Something went wrong</div>
+        <div class="page-404-subtitle">We couldn't find the page you're looking for</div>
+        <img src="img/page-404-img.png" alt="">
+        <a href="/">
+          <button class="page-404-btn cart-content-button cart-btn-light">back to home page</button>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top-text-part">
+          <div class="footer-top-uptitle">N E W S L E T T E R</div>
+          <div class="footer-top-title">Get Monthly Updates</div>
+        </div>
+        <div class="footer-top-input-part">
+          <input type="text" class="footer-top-input" placeholder="Enter your email address and get updates directly to your email">
+          <button class="footer-top-input-button">
+            <img src="img/arrow-basic-gold.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-underline"></div>
+
+      <div class="footer-content">
+        <div class="footer-columns-part">
+          <div class="footer-column">
+            <div class="footer-column-title">Company</div>
+            <div class="footer-column-item">Contacts</div>
+            <div class="footer-column-item">Shops</div>
+            <div class="footer-column-item">Delivery</div>
+            <div class="footer-column-item">VISPĀRĒJIE NOTEIKUMI</div>
+            <div class="footer-column-item">Privātuma politika</div>
+            <div class="footer-column-item">FAQs</div>
+          </div>
+
+          <div class="footer-column">
+            <a href="#">
+              <div class="footer-column-title">Products</div>
+            </a>
+            <a href="#">
+              <div class="footer-column-item">Relevant</div>
+            </a>
+            <a href="#">
+              <div class="footer-column-item">Woman</div>
+            </a>
+            <a href="#">
+              <div class="footer-column-item">Man</div>
+            </a>
+            <a href="#">
+              <div class="footer-column-item">Children</div>
+            </a>
+          </div>
+        </div>
+        <div class="footer-info-part">
+          <div class="footer-info-media">
+            <a href="#">
+              <img src="img/facebook-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/insta-icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/yt-icon.svg" alt="">
+            </a>
+          </div>
+          <div class="footer-logo">
+            <img src="img/logo-white.svg" alt="">
+          </div>
+          <div class="footer-information">
+            <a href="#">
+              <div class="footer-inormation-line">
+                <img src="img/location-icon.svg" alt="">
+                <div class="footer-information-line-text">Ilūkstes iela 101-72, Rīga</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-inormation-line">
+                <img src="img/call-icon.svg" alt="">
+                <div class="footer-information-line-text">+371 266 91517</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-inormation-line">
+                <img src="img/mail-icon.svg" alt="">
+                <div class="footer-information-line-text">info@baltzelts.lv</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-year">2025</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

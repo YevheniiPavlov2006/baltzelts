@@ -3751,3 +3751,58 @@ body::-webkit-scrollbar {
       left: 10px !important;
       width: 35px !important;
     }
+
+
+
+
+
+
+/*-----------------------------------------------------404------------------------------------------------------*/
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+  
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.page-404-btn {
+  min-width: 560px;
+}
+.page-404 img {
+  padding: 40px 0;
+}
+.page-404-title {
+  font-size: 35px;
+  font-family: 'Playfair Display';
+  text-align: center;
+}
+.page-404-subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Roboto';
+  padding-top: 10px;
+}
+@media(max-width:600px){
+  .page-404 {
+    max-width: 100%;
+    width: 100%;
+  }
+  .page-404-btn {
+    width: calc(100vw - 40px) !important;
+    min-width: 290px;
+  }
+  .page-404-title {
+    font-size: 25px;
+  }
+  .page-404-subtitle {
+    font-size: 14px;
+  }
+  .page-404 img {
+    width: 200px;
+  } 
+}
